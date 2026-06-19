@@ -34,3 +34,7 @@ user_choice = input("Enter your move = Rock, Paper, Scissors = ")
 comp_choice = random.choice(item_list)
 
 print(f"user_choice = {user_choice}, computer choice = {comp_choice}")
+
+
+if user_choice == comp_choice:
+    print("Both chooses same: = Match Tie")
