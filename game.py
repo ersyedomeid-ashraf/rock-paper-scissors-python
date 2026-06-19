@@ -38,3 +38,10 @@ print(f"user_choice = {user_choice}, computer choice = {comp_choice}")
 
 if user_choice == comp_choice:
     print("Both chooses same: = Match Tie")
+
+
+elif user_choice == "Rock":
+    if comp_choice == "Paper":
+        print("Paper covers rock = Computer Win")
+    else:
+        print("Rock smashesh scissors = You Win")
