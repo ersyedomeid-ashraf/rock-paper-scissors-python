@@ -10,27 +10,27 @@ Cases : A - ROCK
 
 Rock - Rock = Tie
 Rock - Paper = Paper win
-Rock - Scissors = Rock win
+Rock - Scissor = Rock win
 
 Cases : B - Paper
 
 Paper - Paper = Tie
 Paper - Rock = Paper win
-Paper - Scissors = Scissors win
+Paper - Scissor = Scissor win
 
-Cases : C - Scissors
+Cases : C - Scissor
 
-Scissors - Scissors = Tie
-Scissors - Rock = Rock win
-Scissors - Paper = Scissors win
+Scissor - Scissor = Tie
+Scissor - Rock = Rock win
+Scissor - Paper = Scissor win
 
 """
 
 import random
 
-item_list = ["Rock", "Paper", "Scissors"]
+item_list = ["Rock", "Paper", "Scissor"]
 
-user_choice = input("Enter your move = Rock, Paper, Scissors = ")
+user_choice = input("Enter your move = Rock, Paper, Scissor = ")
 comp_choice = random.choice(item_list)
 
 print(f"user_choice = {user_choice}, computer choice = {comp_choice}")
@@ -44,4 +44,11 @@ elif user_choice == "Rock":
     if comp_choice == "Paper":
         print("Paper covers rock = Computer Win")
     else:
-        print("Rock smashesh scissors = You Win")
+        print("Rock smashesh scissor = You Win")
+
+
+elif user_choice == "Paper":
+    if comp_choice == "Scissor":
+        print("Scissor cuts paper, Computer win")
+    else:
+        print("Paper covers rock, You Win")
