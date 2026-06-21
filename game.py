@@ -51,4 +51,11 @@ elif user_choice == "Paper":
     if comp_choice == "Scissor":
         print("Scissor cuts paper, Computer win")
     else:
-        print("Paper covers rock, You Win")
+        print("Paper covers rock = You Win")
+
+
+elif user_choice == "Scissor":
+    if comp_choice == "Rock":
+        print("Rock smashes scissor = Computer Win")
+    else:
+        print("Scissor cuts paper = You Win")
